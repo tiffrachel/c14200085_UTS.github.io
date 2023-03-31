@@ -1,0 +1,48 @@
+{
+    "name": "Portfolio",
+    "short_name": "Portfolio",
+    "description": "A portfolio untuk uts AMBW",
+    "icons": [
+      {
+        "src": "images/logo.png",
+        "type": "image/png",
+        "sizes": "48x48"
+      },
+      {
+        "src": "images/logo.png",
+        "type": "image/png",
+        "sizes": "96x96"
+      },
+      {
+        "src": "images/logo.png",
+        "type": "image/png",
+        "sizes": "144x144"
+      },
+      {
+        "src": "images/logo.png",
+        "type": "image/png",
+        "sizes": "192x192"
+      },
+      {
+        "src": "images/logo.png",
+        "type": "image/png",
+        "sizes": "256x256"
+      },
+      {
+        "src": "images/logo.png",
+        "type": "image/png",
+        "sizes": "384x384"
+      },
+      {
+        "src": "images/logo.png",
+        "type": "image/png",
+        "sizes": "512x512"
+      }
+    ],
+    "theme_color": "#F44336",
+    "background_color": "#F44336",
+    "start_url": "/",
+    "display": "standalone",
+    "orientation": "portrait"
+  }
+  
