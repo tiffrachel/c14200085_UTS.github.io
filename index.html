@@ -17,24 +17,6 @@
 -->
 <html lang="en">
 
-<!-- Menambahkan link untuk manifest -->
-<link rel="manifest" href="manifest.json">
-
-<!-- Menambahkan script untuk registrasi service worker -->
-<script>
-
-    if ('serviceWorker' in navigator) {
-      window.addEventListener('load', () => {
-        navigator.serviceWorker.register('service-worker.js')
-          .then(registration => {
-            console.log('Service worker registered:', registration);
-          })
-          .catch(error => {
-            console.log('Service worker registration failed:', error);
-          });
-      });
-    }        
-</script>
 
 
 <head>
@@ -51,6 +33,24 @@
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
+    <!-- Menambahkan link untuk manifest -->
+    <link rel="manifest" href="manifest.json">
+
+    <!-- Menambahkan script untuk registrasi service worker -->
+    <script>
+
+        if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+            navigator.serviceWorker.register('service-worker.js')
+            .then(registration => {
+                console.log('Service worker registered:', registration);
+            })
+            .catch(error => {
+                console.log('Service worker registration failed:', error);
+            });
+        });
+        }        
+    </script>
 
 
 </head>
