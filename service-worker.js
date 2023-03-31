@@ -6,7 +6,7 @@ const urlsToCache = [
   'blog.html',
   'contact.html',
   'style.css',
-  'app.js',
+  'app.js'
 ];
 
 // Menginstall service worker dan melakukan caching pada file-file yang diperlukan
