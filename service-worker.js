@@ -1,12 +1,12 @@
 const CACHE_NAME = 'portfolio-cache-v1';
 const urlsToCache = [
-  '/index.html',
-  '/style.css',
-  '/app.js',
-  '/about.html',
-  '/blog.html',
-  '/contact.html',
-  '/portfolio-example01.html',
+  'index.html',
+  'portfolio-example01.html',
+  'about.html',
+  'blog.html',
+  'contact.html',
+  'style.css',
+  'app.js',
 ];
 
 // Menginstall service worker dan melakukan caching pada file-file yang diperlukan
