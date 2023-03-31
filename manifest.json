@@ -1,7 +1,6 @@
-{
-    "name": "Portfolio",
-    "short_name": "Portfolio",
-    "description": "A portfolio untuk uts AMBW",
+  {
+    "name": "PWA C14200085",
+    "short_name": "TIffany",
     "icons": [
       {
         "src": "images/logo.png",
@@ -39,10 +38,14 @@
         "sizes": "512x512"
       }
     ],
-    "theme_color": "#F44336",
-    "background_color": "#F44336",
-    "start_url": "/",
+    "start_url": "/index.html",
+    "scope": ".",
     "display": "standalone",
-    "orientation": "portrait"
+    "orientation": "portrait-primary",
+    "background_color": "#fff",
+    "theme_color": "#3f51b5",
+    "description": "UTS AMBW",
+    "dir": "ltr",
+    "lang": "en-US"
   }
   
