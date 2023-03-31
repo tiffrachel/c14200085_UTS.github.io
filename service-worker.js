@@ -40,6 +40,43 @@ self.addEventListener('fetch', (event) => {
     );
   });
   
+//cache offline
+self.addEventListener('fetch', function(event) {
+    event.respondWith(
+      caches.match(event.request)
+        .then(function(response) {
+          if (response) {
+            return response;
+          } else {
+            return fetch(event.request)
+              .then(function(res) {
+                return caches.open('first-app')
+                  .then(function(cache) {
+                    return fetch(event.request)
+                    .then(function(res){
+  
+                    cache.put(event.request.url, res.clone());
+                    return res;
+                  })
+              })
+            })
+              .catch(function(err) {
+                return caches.open('first-app')
+                  .then(function(cache) {
+                    return fetch(event.request)
+                    .then(function(res){
+  
+                    cache.put(event.request.url, res.clone());
+                    return res;
+                  })
+                  });
+              });
+          }
+        })
+    );
+  });
+
+
   // Membersihkan cache yang sudah tidak digunakan lagi
   self.addEventListener('activate', function(event) {
     event.waitUntil(
